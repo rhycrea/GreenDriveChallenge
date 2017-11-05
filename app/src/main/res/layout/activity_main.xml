@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aybars.gradleopenxc.MainActivity">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bamboo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button_share"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:onClick="view_challenge"
+        android:text="SHARE"
+        android:textColor="#a6ffaa"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_about"
+        app:layout_constraintTop_toBottomOf="@+id/button_about" />
+
+    <Button
+        android:id="@+id/button_about"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="view_about"
+        android:text="ABOUT"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_guide"
+        app:layout_constraintTop_toBottomOf="@+id/button_guide" />
+
+    <Button
+        android:id="@+id/button_guide"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="view_howto"
+        android:text="HOW-TO"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="@+id/button_stats"
+        app:layout_constraintTop_toBottomOf="@+id/button_stats" />
+
+    <Button
+        android:id="@+id/button_stats"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="view_leaderboard"
+        android:text="LEADBOARD"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_begin"
+        app:layout_constraintTop_toBottomOf="@+id/button_begin" />
+
+    <Button
+        android:id="@+id/button_begin"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="176dp"
+        android:fontFamily="serif-monospace"
+        android:onClick="view_challenge"
+        android:text="BEGIN!"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="104dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="DRIVE CHALLENGE"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="casual"
+        android:text="Green"
+        android:textAllCaps="true"
+        android:textColor="#9effa4"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/text_challenge"
+        app:layout_constraintEnd_toStartOf="@+id/text_challenge"
+        app:layout_constraintTop_toTopOf="@+id/text_challenge" />
+
+    <TextView
+        android:id="@+id/text_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Welcome to"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ford_logo"
+        android:layout_width="150dp"
+        android:layout_height="88dp"
+        android:src="@drawable/ford"
+        app:layout_constraintBottom_toBottomOf="@+id/text_welcome"
+        app:layout_constraintStart_toEndOf="@+id/text_welcome"
+        app:layout_constraintTop_toTopOf="@+id/text_welcome" />
+
+    <TextView
+        android:id="@+id/text_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="This is a social responsibility project. Sharing is important for us."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
